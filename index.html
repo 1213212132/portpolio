@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./css/main.css">
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
@@ -25,7 +26,9 @@
     <!-- <script src="./js/ScrollToPlugin.min.js"></script>
     <script src="./js/TweenMax.min.js"></script>
     <script src="./js/smooth-scroll-m.js"></script> -->
-    <script src="./js/main.js"></script>
+
+    <script src="./js/style.js"></script>
+
 
 
 
@@ -37,22 +40,60 @@
 
         <main>
             <section class="section intro">
-                <div class="sp-container">
-                    <div class="sp-content">
-                        <div class="sp-globe"></div>
-                        <h2 class="frame-1">포트폴리오</h2>
-                        <h2 class="frame-2">열정</h2>
-                        <h2 class="frame-3">i can do it!</h2>
-                        <h2 class="frame-4">이진혁입니다</h2>
-                        <h2 class="frame-5">
-                            <span>이진혁</span>
-                            <span>이진혁,</span>
-                            <span>이진혁</span>
-                        </h2>
+                <div class="header">
+
+                    <!--Content before waves-->
+                    <div class="inner-header flex">
+                        <!--Just the logo.. Don't mind this-->
+
+                        <div class="sp-container container">
+                            <div class="sp-content">
+                                <div class="sp-globe"></div>
+                                <h2 class="frame-1">안녕하세요!</h2>
+                                <h2 class="frame-2">열정</h2>
+                                <h2 class="frame-3">책임감</h2>
+                                <h2 class="frame-4">끈기</h2>
+                                <h2 class="frame-5">
+                                    <span>I can do it! <br></span>
+                                    <span>꿈을 가진 <br></span>
+                                    <span>이진혁입니다!</span>
+                                </h2>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="pen">
-                    <img src="./images/draw-4067546_640.png" alt="">
+
+                    <!--Waves Container-->
+                    <div>
+                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                            <defs>
+                                <path id="gentle-wave"
+                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                            </defs>
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                            </g>
+                        </svg>
+
+
+                    </div>
+                    <!--Waves end-->
+
+                    <div id="background-wrap">
+                        <div class="bubble x1"></div>
+                        <div class="bubble x2"></div>
+                        <div class="bubble x3"></div>
+                        <div class="bubble x4"></div>
+                        <div class="bubble x5"></div>
+                        <div class="bubble x6"></div>
+                        <div class="bubble x7"></div>
+                        <div class="bubble x8"></div>
+                        <div class="bubble x9"></div>
+                        <div class="bubble x10"></div>
+                    </div>
                 </div>
             </section>
 
